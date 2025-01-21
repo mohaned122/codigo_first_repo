@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 38, 38);
+    padding: 1%;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: block;
+}
+nav a:hover{
+    background-color: rgb(102, 93, 93)
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span label{
+    font-size: 35px;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    #check:checked ~ nav ul{
+        display: flex;
+        transition: all 0.5s;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+    span label{
+        font-size: 40px;
+        display:block;
+    }
+}
