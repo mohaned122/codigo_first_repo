@@ -33,9 +33,21 @@ body{
     justify-content: space-between;
 }
 
-.login input{
+.login .container input{
     padding: 10px;
     border: none;
+    width: 100%;
+}
+.login .container{
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+i{
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    font-size: larger;
 }
 .login button{
     padding: 10px;
