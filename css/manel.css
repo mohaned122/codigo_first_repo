@@ -27,10 +27,34 @@ nav a{
     padding: 5px 20px;
     border-radius: 5px;
     display: block;
+    position: relative;
 }
-nav li:hover{
-    background-color: rgb(132, 132, 132);
-    color: white;
+nav a:hover::before{
+    transition: .4s;
+    width: 0;
+}
+nav a:hover::after{
+    width: 100%;
+    transition: .4s;
+    
+}
+nav a::before{
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+nav a::after{
+    content: '';
+    background-color: white;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 0%;
+    left: 0;
 }
 .name{
     display: flex;
@@ -65,9 +89,15 @@ footer .content{
     justify-content: space-around;
     align-items: center;
 }
-footer .content >*{
+footer .content *{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+footer a:hover{
+    color: rgb(132, 132, 132);
 }
 .gap,footer{
     height: 100px;

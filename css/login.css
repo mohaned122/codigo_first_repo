@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../Asset/image/snow.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 50vh;
+}
+.login h1{
+    text-align: center;
+    padding: 10px;
+}
+.login form{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login .part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login input{
+    padding: 10px;
+    border: none;
+}
+.login button{
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+.login button:hover{
+    background: #555;
+}
